@@ -1,0 +1,64 @@
+body {
+  background-color: #1e0f2f;
+  color: #fff;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: #c9a0ff;
+  margin-top: 30px;
+  font-family: "Jolly Lodger";
+}
+
+.jogo-memoria {
+  width: 1275px; 
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  grid-gap: 15px;
+  justify-content: center;
+}
+
+.img {
+  background-color: #FFE3BD;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #FFE3BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Jolly Lodger";
+  font-size: 42px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  border: none;
+  padding: 0;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #8958FF;
+  border-radius: 12px;
+  color: white;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
