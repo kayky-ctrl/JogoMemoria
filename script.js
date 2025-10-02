@@ -4,18 +4,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const meuBotao = document.getElementById("meuBotao");
     const modalVitoria = document.getElementById("modalVitoria");
     const closeModalBtn = document.getElementById("closeModalBtn");
+    const playAgain = document.getElementById("playAgain");
 
     // Verifica se os elementos foram encontrados antes de adicionar os eventos
-    if (meuBotao && modalVitoria && closeModalBtn) {
+    if (meuBotao && modalVitoria && closeModalBtn && playAgain) {
 
         // Função para mostrar o modal
         function abrirModal() {
             modalVitoria.classList.remove("hidden");
+            playAgain.classList.remove("hidden")
         }
 
         // Função para esconder o modal
         function fecharModal() {
             modalVitoria.classList.add("hidden");
+            playAgain.classList.add("hidden");
         }
 
         // Adiciona o evento para ABRIR o modal quando o botão "Buuh!" for clicado
@@ -31,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 fecharModal();
             }
         });
+
+        playAgain.addEventListener("click", fecharModal);
 
     } else {
         // Se algum elemento não for encontrado, mostra um aviso no console
