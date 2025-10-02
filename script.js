@@ -1,4 +1,3 @@
-// Garante que o script só vai rodar depois que a página carregar completamente.
 document.addEventListener('DOMContentLoaded', function() {
 
     // Seleciona os elementos do HTML que vamos usar

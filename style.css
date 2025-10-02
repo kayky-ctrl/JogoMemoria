@@ -63,8 +63,6 @@ button:hover {
   object-fit: contain;
 }
 
-/* =========== ESTILOS DO MODAL ADICIONADOS AQUI =========== */
-
 /* Fundo escuro que cobre a tela toda */
 .modal-overlay {
     position: fixed; /* Fica fixo na tela mesmo com rolagem */
@@ -123,7 +121,6 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* Classe para esconder elementos (MOVIDA PARA O FINAL) */
 .hidden {
     display: none;
 }
